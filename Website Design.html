@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gallery</title>
+	<link rel="stylesheet" type="text/css" href="css/web_design.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">	</script>
+</head>
+<body>
+<div class="wrap">
+	<div class="website">	
+		<center>
+		<h1>Website Designs</h1>
+			 <div class="website-content">
+			 	 <p>
+			 	 	<br>
+			 	 	<h2>It's All in The Details..</h2>
+				 	<br>
+				 	<br>
+				 We are not a jack-of-all-trades, we are experts at what we do, because it's all we do. We support numerous WordPress,<br>Shopify and Squarespace powered websites across the globe with remarkable service levels by a team of professionals.<br><br>Our impeccable services enable you to easily and professionally showcase your business along with your products, services, <br>portfolio items. with our handcrafted eye-catching templates. Our well-qualified engineers have spent years improving the art<br> of managing and designing websites. Our services are meant for the needs of high traffic and high profile publishers.
+				 <br><br><br>
+				 </p>
+			</div>
+	</center>
+	</div> 
+	<center>
+	<h1 align="center"> Website Designs </h1>
+		<div id="gallery">
+			<div id="panel">
+				<img id="largeImage" src="Gallery/1_large.jpg"/>
+				<br>
+			<!-- 	<img id="description">1st image description</div> -->
+			</div>
+		</div>
+		<div id="thumbs">
+			<br>
+			<img src="Gallery/1_thumb.jpg" alt="1st image description"/>
+			<img src="Gallery/2_thumb.jpg" alt="2nd image description"/>
+<!-- 			<img src="Gallery/3_thumb.jpg" alt="3rd image description"/> -->
+			<img src="Gallery/4_thumb.jpg" alt="4th image description"/>
+			<img src="Gallery/5_thumb.jpg" alt="5th image description"/>
+	    </div>
+		<script>
+			$('#thumbs').delegate('img','click',function(){
+				$('#largeImage').attr('src',$(this).attr('src').replace('thumb','large'));
+					$('#description').html($(this).attr("alt"));
+			});
+		</script>
+	</center>
+</div>
+</body>
+</html>

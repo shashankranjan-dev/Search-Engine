@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration form</title>
+	<link rel="stylesheet" type="text/css" href="css\form.css">
+	<script type="text/javascript">
+	   function formdata()
+	   {
+	   	 var name=document.forms["Registration form"]["name"];
+	   	 var address=document.forms["Registration form"]["address"];
+	   	 var email=document.forms["Registration form"]["email"]; 
+	   	 var phone=document.forms["Registration form"]["phone"]; 
+          var password=document.forms["Registration form"]["password"];
+          var pass1=/^(?=.*[0-9])(?=.[!@])[a-zA-z0-9!@#$%^&*]{6,16}$/; 
+               
+               if (name.value=="")
+               {
+               	  window.alert("Please enter your name.");
+               	  name.focus();
+               	  return false;
+               }            
+               if (address.value=="") 
+               {
+               	  window.alert("Please enter your address.");
+                  address.focus();
+                  return false;
+               }
+               if (email.value=="")
+               {
+               	  window.alert("Please enter your email.");
+               	  email.focus();
+               	  return false;
+               }
+               if (email.value.indexOf("@")< 0) 
+               {
+               	  window.alert("Please enter your valid E-mail address.");
+               	  email.focus();
+               	  return false;
+               }	  
+               if (email.value.indexOf(".")< 0) 
+               {
+               	  window.alert("Please enter your valid E-mail address.");
+               	  email.focus();
+               	  return false;
+               }
+               if (phone.value=="") 
+               {
+               	  window.alert("Please enter your phone number.");
+               	  phone.focus();
+               	  return false;
+               }
+               if (password.value=="")
+               {
+               	  window.alert("Please enter password. It must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters");
+               	  password.focus();
+               	  return false;
+               }
+               if (mind.value=="") 
+               {
+                  window.alert("Please enter your address.");
+                  mind.focus();
+                  return false;
+               }               
+              return true;
+            }
+        </script>
+</head>            
+<body>
+    <div class="wrap clearfix">
+         <div class="form"> 
+          	<h1>Get In Touch</h1>
+    			<form name="Registration form"	action="/file.php" onsubmit="return formdata()" method="POST">
+    				<label for="name">Name:</label>
+    		  			<input type="text" placeholder="Enter Your Name" name="name" pattern="[a-zA-Z]{0-30}" >
+    				<label for="address">Address:</label> 
+    		  			<input type="text" placeholder="Enter Your Address" name="address">
+    				<label for="email">Email:</label>
+    		  			<input type="text" placeholder="Enter Your Email" name="email" > <!-- pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" -->
+   				<label for="phone">Phone:</label>
+    		  			<input type="text" placeholder="Enter Your Phone No." name="phone" pattern="[6-9]{1}[0-9]{9}" >
+    				<label for="password">Password:</label>
+    		 			<input type="password" placeholder="Enter Password" name="password" minlength="8" maxlength="16" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+    		   <label for="mind">What's on Your Mind?:</label> 
+              <input type="text" placeholder="What's on Your Mind?" name="mind">
+            <br>
+    		  			<input type="submit" value="Register">
+				</form>
+		</div>		
+	</div>   	
+</body>
+</html>

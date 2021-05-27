@@ -1,0 +1,207 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	border-top: 3px solid blue;
+}
+.clearfix{
+	clear: both;
+	content: "";
+	display: table;
+}
+.wrap{
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+#grad1 {
+  height: auto;
+  background-color: white; /* For browsers that do not support gradients */
+  background-image: radial-gradient(#18E2FE, white); /* Standard syntax (must be last) */
+}
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.banner{
+	position: relative;
+/*	background: url("about.jpg");*/
+}
+.banner img{
+	width: 40%;
+	height: 20%;
+	transform: translate(10%,10%);
+	padding-bottom: 25px;
+}
+input[type=text] {
+  width: 400px;
+  align-self: center;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url("searchicon.png");
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+  width: 90%;
+}
+.about h1{
+	font-size: 300%;
+	text-align:center;
+	color: #27AAFF;
+	text-decoration: underline;
+}
+.about content{
+	color: blue;
+	position: absolute;
+	top: 110%;
+	left: 35%;
+	transform: translate(10%,10%);
+}
+.about p{
+	font-size:130%;
+	font-family: 'Satisfy', cursive;
+}
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+.btn:hover {
+	background: #eee;
+}
+.row{
+/*	background: url("about.jpg");*/
+}
+.row h1{
+	font-size: 300%;
+	text-align: center;
+	color: #27AAFF;
+	text-decoration: underline;
+}
+.column{
+	width: 24.5%;
+	float:left;
+	list-style: none;
+}
+.column img{
+	width: 25%;
+	height: 25%;
+}
+.column p{
+	font-size: 18px;
+}
+.row1{
+	width: 100%;
+}
+.column1{
+	padding-left: 20px;
+	width: 60%;
+	float:left;
+}
+.column1 p{
+	font-size: 20px;
+}
+.column2{
+	width: 30%;
+	float:left;
+}
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
