@@ -12,5 +12,5 @@ input[type=text], input[type=password], input[type=submit]{
 	display: block;
 }
 html{
-	background: url("shake.jpg")
+	background: url("../Images/shake.jpg")
 }
